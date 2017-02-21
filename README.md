@@ -23,6 +23,7 @@ cd ..
 mkdir -p ws2/src
 cd ws2/src
 clone this source
+git checkout kinetic
 cd ..
 catkin_make
 
