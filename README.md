@@ -6,3 +6,26 @@ Information about this stack, including installation and compilation, is availab
 
 [ROS]: http://www.ros.org
 [ICP]: http://en.wikipedia.org/wiki/Iterative_Closest_Point
+
+Compile for Kinetic 
+
+```
+mkdir -p catkin_ws/ws1/src
+cd catkin/ws1/src
+catkin_init_workspace
+git clone https://github.com/ethz-asl/libnabo.git
+git clone https://github.com/ethz-asl/libpointmatcher.git
+cd ..
+catkin_make_isolated
+source devel_isolated/setup.bash
+
+cd ..
+mkdir -p ws2/src
+cd ws2/src
+clone this source
+cd ..
+catkin_make
+
+```
+
+
